@@ -1,0 +1,459 @@
+//REGISTERATION PAGE
+
+
+
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Registration Form</title>
+  </head>
+
+	<body>
+	<h2 align="center">Create Your Account</h2>
+	<table cellspacing="2" align="center" cellpadding="8" border="0">
+	<tr>
+	<td align="right">Enter Name :</td>
+	<td><input type="text" placeholder="Enter user here" id="t1" class="tb" /></td>
+	</tr>
+	<tr>
+	<td align="right">Enter Email ID :</td>
+	<td><input type="text" placeholder="Enter Email ID here" id="t2" class="tb" /></td>
+	</tr>
+	<tr>
+	<td align="right">Enter Username :</td>
+	<td><input type="text" placeholder="Enter Username here" id="t3" class="tb" /></td>
+	</tr>
+	<tr>
+	<td align="right">Enter Password :</td>
+	<td><input type="password" placeholder="Enter Password here" id="t4" class="tb" /></td>
+	</tr>
+	<tr>
+	<td align="right">Enter Confirm Password :</td>
+	<td><input type="password" placeholder="Enter Password here" id="t5" class="tb" /></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td>
+	<input type="submit" value="Create Account" class="btn" onclick="registration()" /></td>
+	</tr>
+	</table>
+         <a href="login.html" align="center">login</a>
+         <script src="function regiteration().js"></script>
+         <link rel="stylesheet"href="registeration.css">
+	</body>
+	</html>
+
+
+
+
+//LOGIN.HTML
+
+
+
+ <!DOCTYPE html>
+  <html>
+  <head>
+  <title>Welcome To Login Form</title>
+  </head>
+
+	<body>
+	<h2 align="center">Login</h2>
+	<div class="login">
+	<table cellspacing="2" align="center" cellpadding="8" border="0">
+	<tr>
+	<td>Enter User Name :</td>
+	<td><input type="text" placeholder="Enter user name here" id="email" class="tb" /></td>
+	</tr>
+	<tr>
+	<td>Enter Password :</td>
+	<td><input type="password" placeholder="Enter Password here" id="pwd1" class="tb" /></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td>
+	<input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
+	<input type="submit" value="Login" class="btn" onClick="login()" /></td>
+	</tr>
+	</table>
+	<link rel="stylesheet"href="login.css">
+        <script src="funcction login().js"></script>
+     </body>
+  </html>
+  
+
+
+
+//REGISTERATION.CSS
+
+/* body css for whole page */
+    body
+    {
+	    margin:0px;
+	    background-color:pink;
+	    background-image:url(image/background.jpg);
+	    color:#f9fcf5;
+	    font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    #main{width:600px; height:auto; overflow:hidden; padding-bottom:20px; margin-left:auto; margin-right:auto; 
+    border-radius:5px; padding-left:10px; margin-top:100px; border-top:3px double #f1f1f1; 
+    border-bottom:3px double #f1f1f1; padding-top:20px;
+    }
+    
+    #main table{font-family:"Comic Sans MS", cursive;}
+    /* css code for textbox */
+    #main .tb{height:28px; width:230px; border:1px solid #f26724; color:#fd7838; font-weight:bold; border-left:5px solid #f7f7f7; opacity:0.9;}
+    
+    #main .tb:focus{height:28px; border:1px solid #f26724; outline:none; border-left:5px solid #f7f7f7;}
+
+    /* css code for button*/
+    #main .btn{width:150px; height:32px; outline:none;  color:#f7f7f7; font-weight:bold; border:0px solid #f26724; 
+    text-shadow: 0px 0.5px 0.5px #fff; border-radius: 2px; font-weight: 600; color: #f26724; letter-spacing: 1px; 
+    font-size:14px; background-color:#f1f1f1; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;}
+  
+    #main .btn:hover{background-color:#f26724; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1;
+    -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; }
+	
+
+
+
+//LOGIN.CSS
+
+
+
+
+    body
+   {
+     margin:0px; background-color:#27a465; color:#f7f7f7; font-family:Arial, Helvetica, sans-serif;
+   }
+   #main
+     {
+          
+   #main
+   {
+     width:600px; height:260px; margin-left:auto; margin-right:auto; border-radius:5px; padding-left:10px; margin-top:100px;
+     border-top:3px double #f1f1f1; border-bottom:3px double #f1f1f1; padding-top:20px;
+   }
+   #main table
+   {
+     font-family:"Comic Sans MS", cursive;
+   } 
+  /* css code for textbox */
+  #main .tb
+  {
+    height:28px; width:230px; border:1px solid #27a465; color:#27a465; font-weight:bold; border-left:5px solid #f7f7f7; opacity:0.9;
+  }
+
+   /* css code for button*/
+   #main .btn
+   {
+    width:80px; height:32px; outline:none;  font-weight:bold; border:0px solid #27a465; text-shadow: 0px 0.5px 0.5px #fff;	
+    border-radius: 2px; font-weight: 600; color: #27a465; letter-spacing: 1px; font-size:14px; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;
+   }
+  
+   #main .btn:hover
+   {
+    background-color:#27a465; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1;
+   }
+   
+
+
+//FUNCTION REGISTERATION().JS
+
+
+
+function registration()
+	{
+
+		var name= document.getElementById("t1").value;
+		var email= document.getElementById("t2").value;
+		var uname= document.getElementById("t3").value;
+		var pwd= document.getElementById("t4").value;			
+		var cpwd= document.getElementById("t5").value;
+		
+        //email id expression code
+		var pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
+		var letters = /^[A-Za-z]+$/;
+		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+		if(name=='')
+		{
+			alert('Please enter your name');
+		}
+		else if(!letters.test(name))
+		{
+			alert('Name field required only alphabet characters');
+		}
+		else if(email=='')
+		{
+			alert('Please enter your user email id');
+		}
+		else if (!filter.test(email))
+		{
+			alert('Invalid email');
+		}
+		else if(uname=='')
+		{
+			alert('Please enter the user name.');
+		}
+		else if(!letters.test(uname))
+		{
+			alert('User name field required only alphabet characters');
+		}
+		else if(pwd=='')
+		{
+			alert('Please enter Password');
+		}
+		else if(cpwd=='')
+		{
+			alert('Enter Confirm Password');
+		}
+		else if(!pwd_expression.test(pwd))
+		{
+			alert ('Upper case, Lower case, Special character and Numeric letter are required in Password filed');
+		}
+		else if(pwd != cpwd)
+		{
+			alert ('Password not Matched');
+		}
+		else if(document.getElementById("t5").value.length < 6)
+		{
+			alert ('Password minimum length is 6');
+		}
+		else if(document.getElementById("t5").value.length > 12)
+		{
+			alert ('Password max length is 12');
+		}
+		else
+		{				                            
+               alert('Your Account is Created');
+			  
+		}
+	}
+	function clearFunc()
+	{
+		document.getElementById("t1").value="";
+		document.getElementById("t2").value="";
+		document.getElementById("t3").value="";
+		document.getElementById("t4").value="";
+		document.getElementById("t5").value="";
+	}
+
+
+//FUNCTION LOGIN().JS
+
+
+
+function registration()
+	{
+
+		var name= document.getElementById("t1").value;
+		var email= document.getElementById("t2").value;
+		var uname= document.getElementById("t3").value;
+		var pwd= document.getElementById("t4").value;			
+		var cpwd= document.getElementById("t5").value;
+		
+        //email id expression code
+		var pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
+		var letters = /^[A-Za-z]+$/;
+		var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+		if(name=='')
+		{
+			alert('Please enter your name');
+		}
+		else if(!letters.test(name))
+		{
+			alert('Name field required only alphabet characters');
+		}
+		else if(email=='')
+		{
+			alert('Please enter your user email id');
+		}
+		else if (!filter.test(email))
+		{
+			alert('Invalid email');
+		}
+		else if(uname=='')
+		{
+			alert('Please enter the user name.');
+		}
+		else if(!letters.test(uname))
+		{
+			alert('User name field required only alphabet characters');
+		}
+		else if(pwd=='')
+		{
+			alert('Please enter Password');
+		}
+		else if(cpwd=='')
+		{
+			alert('Enter Confirm Password');
+		}
+		else if(!pwd_expression.test(pwd))
+		{
+			alert ('Upper case, Lower case, Special character and Numeric letter are required in Password filed');
+		}
+		else if(pwd != cpwd)
+		{
+			alert ('Password not Matched');
+		}
+		else if(document.getElementById("t5").value.length < 6)
+		{
+			alert ('Password minimum length is 6');
+		}
+		else if(document.getElementById("t5").value.length > 12)
+		{
+			alert ('Password max length is 12');
+		}
+		else
+		{				                            
+               alert('Your Account is Created');
+			  
+		}
+	}
+	function clearFunc()
+	{
+		document.getElementById("t1").value="";
+		document.getElementById("t2").value="";
+		document.getElementById("t3").value="";
+		document.getElementById("t4").value="";
+		document.getElementById("t5").value="";
+	}
+
+
+
+
+
+//DATA
+
+
+ [{
+"name": "sri",
+"age": 10,
+"dob": "20-10-2000",
+"firstName": "",
+"lastName": "",
+"more": {
+"address_line1": "",
+"address_line2": "",
+"address_line3": "",
+"phone": ""
+}
+}
+
+ [{
+"name": "-Kavi",
+"age": 20,
+"dob": "20-09-2000",
+"firstName": "",
+"lastName": "",
+"more": {
+"address_line1": "",
+"address_line2": "",
+"address_line3": "",
+"phone": ""
+}
+}
+
+
+ [{
+"name": "Mathi",
+"age": 15,
+"dob": "30-8-2000",
+"firstName": "",
+"lastName": "",
+"more": {
+"address_line1": "",
+"address_line2": "",
+"address_line3": "",
+"phone": ""
+}
+}
+
+ [{
+"name": "Java",
+"age": 13,
+"dob": "28-10-1999",
+"firstName": "",
+"lastName": "",
+"more": {
+"address_line1": "",
+"address_line2": "",
+"address_line3": "",
+"phone": ""
+}
+}
+
+ [{
+"name": "Python",
+"age": 25,
+"dob": "22-09-2000",
+"firstName": "",
+"lastName": "",
+"more": {
+"address_line1": "",
+"address_line2": "",
+"address_line3": "",
+"phone":"",
+}
+}
+
+
+ [{
+"name": "Array",
+"age": 23,
+"dob": "20-10-2000",
+"firstName": "",
+"lastName": "",
+"more": {
+"address_line1": "",
+"address_line2": "",
+"address_line3": "",
+"phone": ""
+}
+}
+
+
+
+<script type="text/javascript">
+
+function send()
+{
+    var urlvariable;
+
+    urlvariable = "text";
+
+    var ItemJSON;
+
+    ItemJSON = '[  {    "Id": 1,    "First Name ": "",    "Last Name": "", "Adress":"", "Phone":"",  },  {    "Id": 1,    "First Name ": "",    "Last Name": "", "Adress":"", "Phone":"",  }]';
+
+    URL = "https://srimathi.free,beeceptor.com/my/api/path";
+
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = callbackFunction(xmlhttp);
+    xmlhttp.open("POST", URL, false);
+    xmlhttp.setRequestHeader("Content-Type", "application/json");
+    xmlhttp.setRequestHeader('Authorization', 'Basic ' + window.btoa('apiusername:apiuserpassword')); 
+    xmlhttp.onreadystatechange = callbackFunction(xmlhttp);
+    xmlhttp.send(ItemJSON);
+    alert(xmlhttp.responseText);
+    document.getElementById("div").innerHTML = xmlhttp.statusText + ":" + xmlhttp.status + "<BR><textarea rows='50' cols='50'>" + xmlhttp.responseText + "</textarea>";
+}
+
+function callbackFunction(xmlhttp) 
+{
+    
+}
+</script>
+
+
+<html>
+<body id='bod'><button type="submit" onclick="javascript:send()">call</button>
+<div id='div'>
+
+</div></body>
+</html> 
+
+
+
